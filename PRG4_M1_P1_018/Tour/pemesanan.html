@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pesan Tur Impian Anda - NusaAdventura</title>
+  <meta name="description" content="Pilih dan pesan petualangan Anda di Indonesia dengan mudah. Rincian harga transparan dan dinamis.">
+  <meta name="keywords" content="booking, pemesanan, tur, dinamis, indonesia, nusaadventura">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="booking-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+  <h1 class="sitename">Nusa Adventura</h1>
+</a>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Nusa Adventura</h1>
+      </a>
+      
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="destinasi.html">Destinasi</a></li>
+          
+          <li><a href="pemesanan.html" class="active">Pemesanan</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted" href="pemesanan.html">Pesan Sekarang</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="page-title" data-aos="fade" style="background-image: url(assets/img/travel/booking-bg.jpg);">
+      <div class="container">
+        <h1>Konfirmasi Pemesanan Anda</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="travel-booking" class="travel-booking section">
+      <div class="container">
+        <div class="row gx-lg-5">
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="booking-form-container">
+              
+              <ul class="booking-progress nav nav-pills" id="booking-tabs" role="tablist">
+                <li class="nav-item step" role="presentation">
+                  <button class="nav-link active" id="step1-tab" data-bs-toggle="pill" data-bs-target="#step1" type="button" role="tab">
+                    <span class="step-number">1</span> <span class="step-title">Detail Tur</span>
+                  </button>
+                </li>
+                <li class="nav-item step" role="presentation">
+                  <button class="nav-link" id="step2-tab" data-bs-toggle="pill" data-bs-target="#step2" type="button" role="tab" disabled>
+                    <span class="step-number">2</span> <span class="step-title">Data Diri</span>
+                  </button>
+                </li>
+                <li class="nav-item step" role="presentation">
+                  <button class="nav-link" id="step3-tab" data-bs-toggle="pill" data-bs-target="#step3" type="button" role="tab" disabled>
+                    <span class="step-number">3</span> <span class="step-title">Pembayaran</span>
+                  </button>
+                </li>
+              </ul>
+
+              <form class="booking-form mt-4">
+                <div class="tab-content" id="booking-tabs-content">
+                  
+                  <div class="tab-pane fade show active" id="step1" role="tabpanel">
+                    <h4>1. Pilih Destinasi & Jadwal</h4>
+                    <div class="form-group">
+                        <label for="tour-select">Pilih Paket Tur Anda </label>
+                        <select class="form-select" id="tour-select" name="paket_tur" required>
+                          <option value="" disabled selected>-- Harap Pilih Destinasi --</option>
+                          <option value="bromo">Tur Gunung Bromo</option>
+                          <option value="komodo">Eksplorasi Pulau Komodo</option>
+                          <option value="rajaampat">Surga Raja Ampat</option>
+                          <option value="sumba">Petualangan Sumba</option>
+                          <option value="rinjani">Pendakian Gunung Rinjani</option>
+                          <option value="bali">Pesona Pulau Bali</option>
+                        </select>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-md-6 form-group">
+                        <label for="jumlah_peserta">Jumlah Peserta</label>
+                        <input type="number" id="jumlah_peserta" name="jumlah_peserta" class="form-control" value="1" min="1" required>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label for="tanggal_berangkat">Tanggal Berangkat</label>
+                        <input type="date" id="tanggal_berangkat" name="tanggal_berangkat" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="form-navigation mt-4 text-end">
+                      <button type="button" class="btn btn-next">Lanjutkan</button>
+                      &nbsp;&nbsp;
+                       <a type="button" class="btn btn-next" href="index.html">Kembali</a>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="step2" role="tabpanel">
+                    <h4>2. Isi Data Pemesan</h4>
+                     <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="nama_lengkap">Nama Lengkap</label>
+                            <input type="text" id="nama_lengkap" name="nama" class="form-control" placeholder="Nama sesuai KTP" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="telepon">Nomor Telepon</label>
+                            <input type="tel" id="telepon" name="telepon" class="form-control" placeholder="0812..." required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label>Layanan Tambahan</label>
+                        <div class="addon-options">
+                            <div class="addon-item">
+                              <div class="addon-details">
+                                  <div class="addon-check">
+                                      <input type="checkbox" id="asuransi"><label for="asuransi"><h5>Asuransi Perjalanan</h5><p>Perlindungan ekstra selama perjalanan Anda.</p></label>
+                                  </div>
+                                  <div class="addon-price"><span class="price">Rp 150rb</span><span class="period">/orang</span></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-navigation mt-4 d-flex justify-content-between">
+                      <button type="button" class="btn btn-prev">Kembali</button>
+                      <button type="button" class="btn btn-next">Lanjutkan</button>
+                    </div>
+                  </div>
+                  
+                  <div class="tab-pane fade" id="step3" role="tabpanel">
+                    <h4>3. Pilih Metode Pembayaran</h4>
+                    <div class="form-group mt-3">
+                        <label>Metode Pembayaran </label>
+                        <div class="payment-methods">
+                            <div class="method-selector">
+                                <input type="radio" id="bca" name="payment" value="bca" checked>
+                                <label for="bca"><i class="bi bi-bank"></i> Transfer</label>
+                            </div>
+                            <div class="method-selector">
+                                <input type="radio" id="cc" name="payment" value="cc">
+                                <label for="cc"><i class="bi bi-credit-card"></i> Kredit</label>
+                            </div>
+                            <div class="method-selector">
+                                <input type="radio" id="gopay" name="payment" value="gopay">
+                                <label for="gopay"><i class="bi bi-phone"></i> E-Wallet</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="catatan">Catatan Tambahan </label>
+                        <textarea id="catatan" class="form-control" name="catatan" rows="4" placeholder="Contoh: Minta dijemput di lokasi A, alergi debu, dll."></textarea>
+                    </div>
+                     <div class="terms-agreement mt-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="terms" required>
+                            <label class="form-check-label" for="terms"> Saya menyetujui <a href="#">Syarat dan Ketentuan</a> yang berlaku.</label>
+                        </div>
+                    </div>
+                    <div class="form-navigation mt-4 d-flex justify-content-between">
+                      <button type="button" class="btn btn-prev">Kembali</button>
+                      <button type="submit" class="btn btn-book" onclick="showSelesaiPemesanan(event)">Selesaikan Pemesanan</button>
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="booking-summary">
+              <div class="summary-header"><h4>Ringkasan Pesanan</h4></div>
+              <div id="summary-content">
+                <p class="text-center p-4">Silakan pilih paket tur untuk melihat rinciannya di sini.</p>
+              </div>
+              <div class="help-section">
+                <h5>Butuh Bantuan?</h5>
+                <p>Tim kami siap membantu Anda 24/7.</p>
+                <div class="contact-info">
+                  <p><i class="bi bi-telephone"></i> +62 812 3456 7890</p>
+                  <p><i class="bi bi-envelope"></i> info@nusaadventura.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer id="footer" class="footer position-relative">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">NusaAdventura</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Petualang No. 45, Jakarta, Indonesia 12345</p>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Nusa Adventura</strong></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  
+  <script>
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      const tourData = {
+        bromo: {
+          name: 'Tur Gunung Bromo', price: 2800000, image: 'assets/img/travel/destination-2.webp',
+          duration: '3 Hari 2 Malam', details: 'Termasuk Jeep 4x4 & Tiket'
+        },
+        komodo: {
+          name: 'Eksplorasi Pulau Komodo', price: 4500000, image: 'assets/img/travel/destination-3.webp',
+          duration: '3 Hari 2 Malam (Live on Board)', details: 'Termasuk Kabin AC & Alat Snorkeling'
+        },
+        rajaampat: {
+          name: 'Surga Raja Ampat', price: 7200000, image: 'assets/img/travel/destination-1.webp',
+          duration: '5 Hari 4 Malam', details: 'Termasuk Speedboat & Penginapan'
+        },
+        sumba: {
+          name: 'Petualangan Sumba', price: 5500000, image: 'assets/img/travel/destination-5.webp',
+          duration: '4 Hari 3 Malam', details: 'Termasuk Mobil Pribadi & Kunjungan Desa'
+        },
+        rinjani: {
+            name: 'Pendakian Gunung Rinjani', price: 3800000, image: 'assets/img/travel/destination-16.webp',
+            duration: '3 Hari 2 Malam', details: 'Termasuk Tenda, Porter, & Makan'
+        },
+        bali: {
+            name: 'Pesona Pulau Bali', price: 3200000, image: 'assets/img/travel/destination-7.webp',
+            duration: '4 Hari 3 Malam', details: 'Termasuk Hotel & Tur Budaya Ubud'
+        }
+      };
+
+      const tourSelect = document.getElementById('tour-select');
+      const summaryContent = document.getElementById('summary-content');
+      const jumlahPesertaInput = document.getElementById('jumlah_peserta');
+
+      function formatRupiah(number) {
+        return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(number);
+      }
+      
+      function updateSummary() {
+        const selectedTourId = tourSelect.value;
+        const jumlahPeserta = parseInt(jumlahPesertaInput.value) || 1;
+
+        if (!selectedTourId) {
+          summaryContent.innerHTML = '<p class="text-center p-4">Silakan pilih paket tur untuk melihat rinciannya di sini.</p>';
+          return;
+        }
+
+        const tour = tourData[selectedTourId];
+        const basePrice = tour.price * jumlahPeserta;
+        const tax = basePrice * 0.1;
+        const totalPrice = basePrice + tax;
+
+        summaryContent.innerHTML = `
+          <div class="selected-tour">
+            <img src="${tour.image}" class="img-fluid" alt="${tour.name}">
+            <div class="tour-info">
+              <h5>${tour.name}</h5>
+              <p><i class="bi bi-clock"></i> ${tour.duration}</p>
+              <p><i class="bi bi-info-circle"></i> ${tour.details}</p>
+            </div>
+          </div>
+          <div class="price-breakdown">
+            <div class="price-item"><span class="description">Harga Paket (${jumlahPeserta} org)</span><span class="amount">${formatRupiah(basePrice)}</span></div>
+            <div class="price-item tax-item"><span class="description">Pajak & Layanan (10%)</span><span class="amount">${formatRupiah(tax)}</span></div>
+            <div class="price-total"><span class="description">Total Bayar</span><span class="amount">${formatRupiah(totalPrice)}</span></div>
+          </div>
+        `;
+      }
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const tourFromUrl = urlParams.get('tour');
+      if (tourFromUrl && tourData[tourFromUrl]) {
+        tourSelect.value = tourFromUrl;
+      }
+      
+      updateSummary();
+
+      tourSelect.addEventListener('change', updateSummary);
+      jumlahPesertaInput.addEventListener('input', updateSummary);
+
+      const nextButtons = document.querySelectorAll('.btn-next');
+      const prevButtons = document.querySelectorAll('.btn-prev');
+      
+      const moveToTab = (targetTabTrigger) => {
+        if (targetTabTrigger) {
+          targetTabTrigger.disabled = false;
+          new bootstrap.Tab(targetTabTrigger).show();
+        }
+      };
+
+      nextButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const currentTabPane = this.closest('.tab-pane');
+          const currentTabTrigger = document.querySelector(`[data-bs-target="#${currentTabPane.id}"]`);
+          const nextTabTrigger = currentTabTrigger.closest('.nav-item').nextElementSibling?.querySelector('.nav-link');
+          moveToTab(nextTabTrigger);
+        });
+      });
+
+      prevButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const currentTabPane = this.closest('.tab-pane');
+          const currentTabTrigger = document.querySelector(`[data-bs-target="#${currentTabPane.id}"]`);
+          const prevTabTrigger = currentTabTrigger.closest('.nav-item').previousElementSibling?.querySelector('.nav-link');
+          moveToTab(prevTabTrigger);
+        });
+      });
+    });
+
+  function showSelesaiPemesanan(event) {
+    event.preventDefault(); // Mencegah form langsung submit
+
+    const checkbox = document.getElementById("terms");
+    if (!checkbox.checked) {
+      alert("Silakan setujui Syarat dan Ketentuan terlebih dahulu.");
+      return;
+    }
+
+    alert("Terima kasih, Pemesanan Anda telah diproses!");
+    // Jika ingin lanjut submit form, bisa tambahkan: document.querySelector("form").submit();
+  }
+  </script>
+
+</body>
+</html>
